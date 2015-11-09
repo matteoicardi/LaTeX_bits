@@ -14,6 +14,9 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 
+%GANTT
+\usepackage{pgfgantt}
+
 %required for wrapping text around figures
 \usepackage{wrapfig}
 
@@ -49,74 +52,92 @@ Comments will then be listed below.
 
 \listoftodos%remove from final
 \newpage% remove from final
+
+
 \title{A brilliant proposal for the EPSRC prepared in \LaTeXe}
 \author{A. N. Other}
 \maketitle
 
-\part{Previous track record}
+\part{Case for support}
+
+Case for Support, totalling up to eight A4 sides, comprising up to two A4 sides for a track record, and six A4 sides describing proposed research and its context. This must be attached, as a single document, using the 'Case for Support' attachment type in Joint electronic submission (Je-S).
 
 
-\lipsum[1-14]
-\bibliographystyleA{angew}
-\bibliographyA{refs}
+\section{Previous research track record}
 
-\newpage
+Use the track record, in up to two A4 sides, to demonstrate that the team involved in the proposal has the appropriate mix of expertise and experience to conduct the research. This section is particularly important for multi-disciplinary proposals.
 
-\part{Description of proposed research and context}
-
-\section{Vision, Aims and Context of the fellowship}
-
-\lipsum[15-16]
-
-\section{Adventure and potential impact}
-
-\lipsum[17-18]
-
+You should:
 \begin{enumerate}[label=\roman*.]
-	\item A
-	\item B
-	\item B
+	\item Summarise the results and conclusions of the applicants' recent work in technological and scientific areas related to the research proposal.
+	\item Include reference to both EPSRC and non-EPSRC funded research.
+	\item Specify expertise at host and associated organisations and beneficiaries
+	\item Detail relevant past collaborative work with industry and other beneficiaries
+	\item Detail where the applicants' previous work has contributed to UK competitiveness or quality of life
+
 \end{enumerate}
 
-\section{Research Concept}
+ 
+
+\section{Proposed research and its context}
+
+Describe the proposed research and its context, in up to six A4 sides, to aid those reviewing your proposal to understand what you plan to do and achieve, and where it fits into the current portfolio of research. The document should include:
+
+
+\begin{enumerate}[label=\roman*.]
+	\item Background
+	\item National importance
+	\item Academic impact
+	\item Research hypothesis and objectives
+	\item Programme and methodology
+\end{enumerate}
+
+\subsection{Background and national importance}
+\begin{itemize}
+	\item[-] Introduce the proposal topic and explain its academic and industrial context
+	\item[-] Demonstrate understanding of related past and current work in the UK and abroad
+\end{itemize}
+
+
+\subsection{National importance}
+Explain the long term effects of the proposed research:
+
+\begin{itemize}
+	\item[-] Contributes to the health of other research disciplines; current or future UK economic success; future development of key emerging industries; or addresses key UK societal challenges.
+	\item[-] Meets national strategic needs by establishing or maintaining unique world leading research activities, including areas of niche capability.
+	\item[-] Fits with and complements other research in the UK portfolio, and EPSRC's portfolio and strategy.
+\end{itemize}
+
+Applicants will be able to address bullet points to different levels depending on their proposed research; however, all applicants should indicate how their research relates to EPSRC's research areas and strategies, and complements the current portfolio. Portfolio is available through EPSRC's Grants on the Web (GoW).
+
+The definition of national importance and further details can be found at preparing new proposals to include national importance.
+
 
 \begin{figure}[!htbp]
 	\begin{center}
 		\includegraphics{img/placeholder_image}
 		\vspace{-30pt}
-		\caption{some caption}
+		\caption{Example figure}
 		\label{fig:full}
 	\end{center}
 \end{figure}
 
-\lipsum[19-20]
 
-\begin{itemize}
-	\item[-]A
-	\item[-]B
-	\item[-]C
-\end{itemize}
 
-\section{Background and Context}
-
-\lipsum[21-22]
+\subsection{Academic impact}
 
 \begin{enumerate}[label=\bfseries \arabic*:, align=left]
-	\item A
-	\item B
-	\item C
+	\item Describe how your research would benefit national and international researchers in the field and related disciplines, and what will be done to ensure that they can benefit.
+	\item Explain collaborations with other researchers and their role in the project. For Visiting Researchers, establish what they will contribute to the project, and why they are the most appropriate person for this.
 \end{enumerate}
 
-\lipsum[23-24]
+\subsection{Research hypothesis and objectives}
 
 \begin{enumerate}[label=\bfseries Objective \arabic*:, align=left]
-	\item A
-	\item B
-	\item B
-	\item C
+	\item Set out your research idea or hypothesis
+	\item Explain why the proposed project is novel and timely enough, both from societal and personal viewpoints, to warrant consideration for funding
+	\item Identify the overall aims of the project, and the measurable objectives the outcome of the work will be assessed
 \end{enumerate}
-
-\lipsum[25-26]
 
 \begin{wrapfigure}{r}{0.5\textwidth}
 \vspace{-11pt}
@@ -128,8 +149,122 @@ Comments will then be listed below.
 	\end{center}
 \end{wrapfigure}
 
-\lipsum[27-30]
+\subsection{Programme and methodology}
+
+\begin{enumerate}[label=\bfseries Objective \arabic*:, align=left]
+	\item Detail and justify research methodology
+	\item Describe the work programme, detailed for each member of the research team, indicating research to be undertaken and milestones that will be used to monitor its progress. Explain how the project will be managed.\end{enumerate}
+
+\bibliographystyleA{angew}
+\bibliographyA{refs}
+
+\clearpage
+\section{Workplan}
+
+The following diagram indicates the approximate schedule for the project.
+%\vskip2ex
+\begin{center}
+\noindent\resizebox{\textwidth}{!}{
+
+\begin{ganttchart}[
+	vgrid = true, 
+%	hgrid = true,
+	bar height=.6,
+	title height = 1,
+	x  unit = .6 cm,
+	y unit title =.8cm,
+	y unit chart =1.2cm,
+	milestone/.append style ={rounded corners = 4pt},
+	milestone inline label node/.append style ={left = 3mm},
+	milestone label font = \normalsize,
+	newline shortcut = false,
+%	bar label font = \large
+%	inline
+]{1}{24} 
+\gantttitle{2014}{12} \gantttitle{2015}{12}\ganttnewline
+%
+%
+\gantttitle{Q 1}{3}\gantttitle{Q 2}{3}\gantttitle{Q 3}{3}\gantttitle{Q 4}{3}\gantttitle{Q 1}{3}\gantttitle{Q 2}{3}\gantttitle{Q 3}{3}\gantttitle{Q 4}{3}  \ganttnewline
+%
+%
+\ganttbar{Description 1}{1}{6}\ganttbar[inline]{W1(a,b)}{1}{6}
+ \ganttnewline
+%
+%
+\ganttbar{Description 2}{4}{21}\ganttbar[inline]{W2(a)}{4}{12}\ganttbar[inline]{W2(a,b)}{13}{15}\ganttbar[inline]{W2(b)}{16}{21}  \ganttnewline
+%
+%
+\ganttbar{Description 3}{10}{21}\ganttbar[inline]{W3(a)}{10}{21}  \ganttnewline
+%
+%
+\ganttbar{Finalisation}{22}{24}\ganttbar[inline]{FO}{22}{24} \ganttnewline[thick]
+%
+%
+%
+%
+\ganttbar%
+[bar/.style={draw=none}]
+{
+\itshape Scientific visits
+}{2}{4}
+\ganttmilestone[inline]{Berlin}{4}\ganttmilestone[inline]{Paris}{11}\ganttmilestone[inline]{Turin}{16}\ganttnewline[thick]
+%
+%
+\ganttmilestone{\itshape Workshops and summer schools}{17}\ganttnewline[thick]
+\ganttbar%
+[bar/.style={draw=none}]
+{
+\itshape International conferences
+}{2}{4}
+\ganttmilestone[inline]{XYZ}{19}
+\ganttmilestone[inline,
+milestone inline label node/.style ={right = 1.5mm}
+]{ZYX}{20}%\ganttnewline[thick]
+%
+%
+
+%
+\end{ganttchart}
+
+
+}
+\end{center}
+\vskip1ex
+
+\begin{enumerate}[label=\bfseries W\arabic*:, align=left]
+	\item Work package 1
+	\begin{enumerate}[label=\itshape \alph*)]
+		\item ...
+		\item ....
+	\end{enumerate}
+	\item Work package 2
+	\item Work package 3
+\end{enumerate}
+
+
+\clearpage
+\part{Pathways to impact}
+Eligible costs include:
+\begin{itemize}
+\item Secondments and people exchange, either to other disciplines or user organisations
+\item Investigator time allocated to impact project activities
+\item Training, including for research assistants
+\item Employment of specialist staff, such as Knowledge Transfer experts, consultants, business analysts, technology translators, and public engagement specialists. Clearly justify their inclusion, and describe what they will do on the project
+\item Project-specific marketing assessments, and early stage commercialisation exploration
+\item Workshops, seminars, networking and engagement events; with other disciplines, industry, policy makers, and the public or third sector
+\item Project-specific publicity, and public engagement activities
+\end{itemize}
+
+\section{Section 1}
+\section{Outreach and public engagement activities}
+
 
 \bibliographystyleB{angew}
 \bibliographyB{refs} %your .bib file
+
+\clearpage
+\part{Justification of resources}
+
 \end{document}
+
+
